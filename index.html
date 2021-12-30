@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuke Ogiso Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <ul class="global-nav">
+                <li><a href="index.html">Home </a></li>
+        </ul>
+    </header>
+    <div class="title">
+        <h1>Yusuke Ogiso</h1>
+        <p>1990/01/17<br>
+            【github】https://github.com/oggysy/<br>
+            【mail】ogisoys@gmail.com
+        </p>
+    </div>
+    <div class="site-contents">
+        <a href="work1.html">
+            <div class="content">
+                <img src="ssfa.png" alt="">
+                <div class="content-title">
+                    <h2>SSFA</h2>
+                    <p>2021</p>
+                </div>
+
+            </div>
+        </a>
+        <a href="work2.html">
+            <div class="content reverse">
+                <div class="content-title">
+                    <h2>指扇メンタルクリニック</h2>
+                    <p>2021</p>
+                </div>
+                <img src="sashimen.png" alt="">
+            </div>
+        </a>
+        <a href="work3.html">
+            <div class="content">
+                <img src="ina_cafe.png" alt="">
+                <div class="content-title">
+                    <h2>INA CAFE</h2>
+                    <p>2021</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <footer>
+        Yusuke Ogiso.
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.global-nav li a').each(function () {
+                var target = $(this).attr('href');
+                if (location.href.match(target)) {
+                    $(this).parent().addClass('current');
+                } else {
+                    $(this).parent().removeClass('current');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+ /* -------------------- スマートフォンレイアウト -------------------- */
+ @media all and (max-width: 670px){
+    .content img{
+        width: 100%;
+        display: block;
+    }
+
+    .content-title{
+        width: 100%;
+        display: block;
+        
+    }
+
+    .content-title h2{
+        text-align: center;
+    }
+
+    .content-title p{
+        text-align: center;
+    }
+
+    .content{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .title h1{
+        font-size: 48px;
+    }
+
+    .work-content h2{
+        padding: 0 20px;
+    }
+
+    .work-content-title{
+        height: 60px;
+    }
+ }
