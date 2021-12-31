@@ -53,4 +53,8 @@
         width: 80%;
         margin: 0 auto;
     }
+
+    .title p{
+        font-size: 8px;
+    }
  }
