@@ -117,8 +117,14 @@ li{
 
 .work-content h2{
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 0 0 ;
     font-weight: normal;
+}
+
+.work-content h3{
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
 }
 
 .work-content img{
