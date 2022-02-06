@@ -54,6 +54,11 @@
         margin: 0 auto;
     }
 
+    .title h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
     .title p{
         font-size: 12px;
     }
@@ -61,4 +66,9 @@
     .about-me{
         width: 80%;
     }
+
+    .br-sp {
+        display: block;
+    }
+
  }

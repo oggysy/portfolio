@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.br-sp {
+    display: none;
+}
+
 .title h1{
     font-size: 48px;
     font-weight: lighter;
@@ -263,6 +267,9 @@ footer{
     width :200px;
 }
 
+
+/* ------------ animation ------------ */
+
 .blur{
 	animation-name:blurAnime;
 	animation-duration:2s;
@@ -286,3 +293,4 @@ footer{
 .blurTrigger{
     opacity: 0;
 }
+
