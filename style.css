@@ -12,14 +12,13 @@
 }
 
 .title h1{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .title p{
-    color: gray;
     font-weight: lighter;
 }
 
@@ -99,8 +98,8 @@ header{
 
 ul{
     list-style: none;
-    margin: 10px 0 0 0;
-    padding-inline-start: 10px;
+    margin: 0 0 0 0;
+    padding-inline-start: 0px;
 }
 
 
@@ -184,14 +183,14 @@ li{
 }
 
 .work-content-title h2{
-    color: gray;
+    color: #5e5e5e;
     font-size: 18px;;
     margin: 0;
 }
 
 .work-content-title p{
     margin: 0;
-    color: gray;
+    color: #5e5e5e;
 }
 
 
@@ -226,22 +225,25 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: gray;
+    color: #5e5e5e;
 }
 
 
 /* ------------ work.html ------------ */
-.about-title h1{
+
+.about-title {
     text-align: center;
+}
+
+
+.about-title h1{
     font-weight: lighter;
     margin-top: 40px;
 }
 
 .about-title p{
     font-family:'Times New Roman', Times, serif;
-    text-align: center;
     font-weight: lighter;
-    color: gray;
     margin-bottom: 5px;
 }
 
@@ -252,7 +254,35 @@ footer{
 }
 
 .about-me p{
-    color: gray;
     text-align: left;
     margin-top: 0;
+    color: #5e5e5e;
+}
+
+.about-title img{
+    width :200px;
+}
+
+.blur{
+	animation-name:blurAnime;
+	animation-duration:2s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+	opacity: 0;
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+	opacity: 1;
+  }
+}
+ 
+.blurTrigger{
+    opacity: 0;
 }
